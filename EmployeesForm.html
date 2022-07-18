@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+</html>
+<body>
+  <h1>Employee Interests Survey form</h1>
+  <form>
+    <section>
+      <label>
+        Enter your name <input type="text" required >
+      </label>
+    </section>
+    <br>
+    <section>
+      <label>
+        Enter your department <input type="text" required>
+      </label>
+    </section>
+    <br>
+    <section>
+      <label for="lazy">
+        Tell us a little about yourself <textarea name="note" cols="30" rows="10"></textarea>
+      </label>
+    </section>
+    <br>
+    <section>
+      <label for="home">
+        Do you exercise at home? <input type="radio" checked required name="yes-no">Yes 
+        <input type="radio" required name="yes-no" >No
+      </label>
+    </section>
+    <br>
+    <section>
+      <label for="topics">
+        How do you like to read about your favorite topics?
+        <br>
+        <input type="checkbox" name="topics" >Books
+        <input type="checkbox" name="topics" >Online resources
+        <input type="checkbox" name="topics" >Phone apps
+        <input type="checkbox" name="topics" >Magazine
+      </label>
+    </section>
+    <br>
+    <section>
+      <label for="movies">
+        What genre of movies do you like? 
+        <select name="movies" id="movies">
+          <option value="comedy">Comedy</option>
+          <option value="romance">Romance</option>
+          <option value="action">Action</option>
+          <option value="horror">Horror</option>
+        </select>
+      </label>
+    </section>
+    <br>
+    Submit <input type="submit">
+  </form>
+</body>
